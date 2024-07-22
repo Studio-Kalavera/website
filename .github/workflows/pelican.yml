@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: poetry install --no-interaction
       - name: Run tests
-        run: make lint test
+        run: poetry run make lint test
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build
