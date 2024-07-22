@@ -164,3 +164,4 @@ cython_debug/
 .requirements
 .nvim.lua
 .tmuxp.yml
+output/
