@@ -20,5 +20,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GH_PAGES_CNAME: ${{secrets.DOMAIN_CNAME}}
-	poetry export -f requirements.txt --without-hashes $$(test "$(POETRY_WITH)" != "" && echo "--with $(POETRY_WITH)") -o requirements.txt
-	poetry export -f requirements.txt --without-hashes $$(test "$(POETRY_WITH)" != "" && echo "--with $(POETRY_WITH)") -o requirements.txt
