@@ -58,6 +58,7 @@ pelican = {extras = ["markdown"], version = "^4.9.1"}
 pelican-sitemap = "^1.1.0"
 pelican-neighbors = "^1.2.0"
 pelican-related-posts = "^1.0.0"
+invoke = "^2.2.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.5.4"
@@ -65,6 +66,7 @@ mypy = "^1.11.0"
 types-invoke = "^2.0.0.10"
 pytest = "^8.3.1"
 pytest-coverage = "^0.0"
+pytest-mock = "^3.14.0"
 
 [build-system]
 requires = ["poetry-core"]
