@@ -115,7 +115,7 @@ body {
   padding-left: 0;
 }
 #menu li {
-  float: right;
+  float: left;
   position: relative;
 }
 #access a {

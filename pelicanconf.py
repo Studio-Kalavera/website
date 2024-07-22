@@ -23,7 +23,10 @@ TRANSLATION_FEED_ATOM: str | None = None
 AUTHOR_FEED_ATOM: str | None = None
 AUTHOR_FEED_RSS: str | None = None
 
-LINKS: tuple[tuple[str, str], ...] = (("Github", "https://github.com/jonkalavera"),)
+LINKS: tuple[tuple[str, str], ...] = (
+    ("Github", "https://github.com/Studio-Kalavera"),
+    ("♡ Sponsor", "https://github.com/sponsors/Studio-Kalavera"),
+)
 
 # Social widget
 SOCIAL: tuple[tuple[str, str], ...] = tuple()
