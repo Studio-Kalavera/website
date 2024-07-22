@@ -33,47 +33,47 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
-#
-#
+
+
 # PAGINATED_DIRECT_TEMPLATES = ("blog-index",)
 # DIRECT_TEMPLATES = ("categories", "index", "blog-index", "blog")
-#
+
 # POST_LIMIT = 3
-#
-# # Formatting for dates
-#
+
+# Formatting for dates
+
 # DEFAULT_DATE_FORMAT = "%d/%b/%Y %a"
-#
-# # Formatting for urls
-#
+
+# Formatting for urls
+
 # ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
 # ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
-#
-# # Plugins
-#
+
+# Plugins
+
 # PLUGIN_PATH = "plugins"
 # PLUGINS = ["sitemap", "neighbors", "related_posts"]
-#
-#
-# # Specify theme
+
+
+# Specify theme
 THEME = "./theme/"
-# # GOOGLE_SEARCH = '013542728820335073314:dcpel18vrey'
+# GOOGLE_SEARCH = '013542728820335073314:dcpel18vrey'
 # SWIFTYPE = ""
-# # SITE_THUMBNAIL = 'https://dl.dropboxusercontent.com/u/299446/logo.png'
+# SITE_THUMBNAIL = 'https://dl.dropboxusercontent.com/u/299446/logo.png'
 # SITE_THUMBNAIL_TEXT = "Studio Kalavera"
-# SITESUBTITLE = "One-man Game Development Studio"
-#
+
 # DISQUS_SITENAME = "studio-kalavera"
-# GOOGLE_ANALYTICS = ""
-# GOOGLE_ANALYTICS_DOMAIN = "studio.kalavera.xyz"
-#
-# # Plugin-specific settings
-#
+GOOGLE_ANALYTICS = "G-WLY18FTC4C"
+GOOGLE_ANALYTICS_DOMAIN = "studio.kalavera.xyz"
+GOOGLE_TAG_MANAGER = "GTM-W8KR5QBF"
+
+# Plugin-specific settings
+
 # RELATED_POSTS_MAX = 20
-#
-# # TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
-# SITEMAP = {
-#     "format": "xml",
-#     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
-#     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-# }
+
+# TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+}
