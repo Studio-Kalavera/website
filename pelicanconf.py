@@ -1,3 +1,5 @@
+"""Pelican configuration."""
+
 AUTHOR = "Jony Kalavera"
 SITENAME = "Studio Kalavera"
 SITESUBTITLE = "One-man Game Development Studio"
@@ -12,17 +14,15 @@ DEFAULT_LANG = "en"
 
 # Do not publish articles set in the future
 WITH_FUTURE_DATES = False
-# TEMPLATE_PAGES = {"blog.html": "blog.html"}
 STATIC_PATHS = ["images"]
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+FEED_ALL_ATOM: str | None = None
+CATEGORY_FEED_ATOM: str | None = None
+TRANSLATION_FEED_ATOM: str | None = None
+AUTHOR_FEED_ATOM: str | None = None
+AUTHOR_FEED_RSS: str | None = None
 
-# Blogroll
 LINKS: tuple[tuple[str, str], ...] = tuple()
 
 # Social widget
@@ -38,7 +38,7 @@ RELATIVE_URLS = True
 
 DEFAULT_DATE_FORMAT = "%d/%b/%Y %a"
 
-# Formatting for urls
+# Formatting for URLs
 
 ARTICLE_URL = "{date:%Y}/{date:%m}/{slug}/"
 ARTICLE_SAVE_AS = "{date:%Y}/{date:%m}/{slug}/index.html"
@@ -61,7 +61,6 @@ GOOGLE_TAG_MANAGER = "GTM-W8KR5QBF"
 
 RELATED_POSTS_MAX = 20
 
-# TODO: align default SITEMAP config to http://wordpress.org/extend/plugins/google-sitemap-generator/stats/
 SITEMAP = {
     "format": "xml",
     "priorities": {"articles": 0.5, "indexes": 0.5, "pages": 0.5},

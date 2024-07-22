@@ -75,5 +75,15 @@ github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) "$(OUTPUTDIR)"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
+format:
+	ruff check --fix-only .
+	ruff format .
+
+lint:
+	ruff check .
+	mypy .
+
+test:
+	pytest -vv --cov .
 
 .PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github
