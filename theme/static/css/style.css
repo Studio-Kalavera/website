@@ -35,10 +35,78 @@ body {
   margin: 0 auto;
   width: 800px;
 }
+@property --size1 {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 10px;
+}
+@property --size2 {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 20px;
+}
+@property --size3 {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 20px;
+}
+@property --color1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #8629ce;
+}
+@property --color2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #4b026f;
+}
+@keyframes bghypnotic {
+  0% {
+    --size1: 10px;
+    --size2: 20px;
+    --size3: 20px;
+    --color1: #8629ce;
+    --color2: #4b026f;
+  }
+  50% {
+    --size1: 0px;
+    --size2: 10px;
+    --size3: 20px;
+    --color1: #8629ce;
+    --color2: #4b026f;
+  }
+  50.1% {
+    --size1: 10px;
+    --size2: 20px;
+    --size3: 20px;
+    --color1: #4b026f;
+    --color2: #8629ce;
+  }
+  100% {
+    --size1: 0px;
+    --size2: 10px;
+    --size3: 20px;
+    --color1: #4b026f;
+    --color2: #8629ce;
+  }
+}
 #header {
   min-height: 180px;
   width: 100%;
-  background-color: #8629ce;
+  background: repeating-radial-gradient(
+    circle,
+    var(--color1) 0px,
+    var(--color1) var(--size1),
+    var(--color2) var(--size1),
+    var(--color2) var(--size2),
+    var(--color1) var(--size2),
+    var(--color1) var(--size3)
+  );
+  animation-name: bghypnotic;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
 }
 #contents {
   border-left: 1px solid #ccc;
